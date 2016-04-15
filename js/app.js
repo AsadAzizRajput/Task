@@ -8,13 +8,14 @@ angular.module('starter' ,['ngMaterial','angular-sortable-view'])
         $scope.modelArray1=[  ];
         $scope.modelArray2=[  ];
         $scope.modelArray3=[  ];
+        $scope.task;
         console.log($scope.modelArray)
         console.log($scope.modelArray1)
 
         $scope.addTask=function(val1)
         {
             $scope.modelArray.push(val1);
-            
+            $scope.task='';
         }
 
     })
